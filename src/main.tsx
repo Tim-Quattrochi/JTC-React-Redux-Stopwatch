@@ -4,11 +4,13 @@ import App from "./App.tsx";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import userReducer from "./features/user.ts";
+import timeReducer from "./features/time.ts";
 import "./index.css";
 
 const store = configureStore({
   reducer: {
     user: userReducer,
+    time: timeReducer,
   },
 });
 
