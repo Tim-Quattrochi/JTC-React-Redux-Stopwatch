@@ -18,12 +18,8 @@ export const timeSlice = createSlice({
   name: "time",
   initialState,
   reducers: {
-    reset: (state) => {
-      state.isOn = false;
-
-      state.hours = 0;
-      state.minutes = 0;
-      state.seconds = 0;
+    reset: () => {
+      return initialState;
     },
     start: (state) => {
       state.isOn = true;
@@ -47,6 +43,5 @@ export const timeSlice = createSlice({
   },
 });
 
-export const { reset, start, tick, stop } = timeSlice.actions;
-
 export default timeSlice.reducer;
+export const { reset, start, tick, stop } = timeSlice.actions;

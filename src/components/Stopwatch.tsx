@@ -1,11 +1,11 @@
-import { useSelector, useDispatch } from "react-redux";
-import { start, tick, stop, reset } from "../features/time";
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { start, tick, stop, reset } from "../features/time/timeSlice";
 import { useEffect } from "react";
 import "./stopWatch.css";
 
 function Clock() {
-  const time = useSelector((state) => state.time);
-  const dispatch = useDispatch();
+  const time = useAppSelector((state) => state.time);
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     if (!time.isOn) {
