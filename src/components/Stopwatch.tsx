@@ -17,10 +17,9 @@ function Clock() {
     return () => clearInterval(timer);
   }, [dispatch, time]);
 
-  console.log(time);
   return (
     <div className="sw-container">
-      <h1>Stop Watch</h1>
+      <h1>Stop Watch ⏰</h1>
       <p className="timeDisplay">
         H:{time.hours} : M: {time.minutes} : S:{time.seconds}
       </p>
