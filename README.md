@@ -1,4 +1,30 @@
-# JTC-Redux-Demo
+# JTC-Redux-Stopwatch
+
+### 3/26/24 assignment
+
+Using Gulp, I have automated a task to remove console logs from the code. This is a simple demonstration of how to use Gulp to automate tasks.
+
+cd into the project directory and run the following command to remove console logs from the code:
+
+```bash
+$ npm install
+$ gulp remove_logging
+```
+
+This will output the code without console logs in the dist folder.
+
+### starting the project
+
+```bash
+$ npm install
+$ gulp
+```
+
+The project will start on localhost:3000
+
+I have configured gulp to watch for changes in any tsx and css files and reload the dev server.
+
+---
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

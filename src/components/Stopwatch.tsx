@@ -16,7 +16,7 @@ function Clock() {
     }, 100);
     return () => clearInterval(timer);
   }, [dispatch, time]);
-
+  console.log("hello"); // Will be removed automatically with gulp remove_logging command.
   return (
     <div className="sw-container">
       <h1>Stop Watch ⏰</h1>
